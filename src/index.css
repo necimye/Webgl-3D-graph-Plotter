@@ -1,0 +1,89 @@
+#box-container {
+  display: flex;
+}
+
+
+.big-box {
+  height: 100vh;
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+}
+
+#input-area {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-top: 20px;
+}
+
+
+#input-box {
+  margin-top: 90px;
+   /* padding: 20px; */
+  padding-top: 0px; 
+  margin-left: 1200px;
+  width: fit-content;
+  position: relative;
+  width: 25%;
+
+}
+
+
+#output-box {
+  width: fit-content;
+}
+
+#graphics-canvas {
+  width: 1150px;
+  height: 800px;
+  position: absolute;
+  /* margin-left: 20px;
+  margin-right: auto;
+  margin-top: 40px;
+  padding: 10px; */
+}
+.scaling-input {
+  margin: 40px 20px 0px 20px;
+  font-family: cursive;
+}
+
+.btn {
+  background-color: #83E2E0;
+  border-radius: 3px;
+  padding: 6px;
+  margin: 20px 20px 40px 60px;
+  width: 91px;
+  height: fit-content;
+  display: block;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #BAD1D0;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.heading-tag {
+  /* text-align: center; */
+  padding-left: 500px;
+  margin-top: 0px;
+}
+#primary-header {
+  font-family: cursive;
+  color:turquoise;
+  line-height: 80%;
+  font:bold;
+  text-align: center;
+  font-size: 29px;
+}
+
+.slider{
+  width: auto;
+  
+}

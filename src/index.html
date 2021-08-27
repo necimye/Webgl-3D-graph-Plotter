@@ -1,0 +1,78 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="index.css" />
+    <script type="text/javascript" src="./lib/jquery.js"  > </script>
+    <script type="text/javascript" src="./lib/gl-matrix-lib.js"  > </script>
+    <script type="text/javascript" src="./lib/math.js"  > </script>
+    <!-- <script type="text/javascript" src="./lib/math.js.map"  > </script> -->
+    
+    <title>GraphPlotter</title>
+  </head>
+  <body>
+    <div id="box-container">
+
+      <div id="output-box" class="big-box">
+        <canvas id="graphics-canvas" width="1200" height="900">
+      <!-- render 3d graph here -->
+        </canvas>
+      </div>
+
+      <div class= "big-box" id="input-box">
+
+        <div id="input-area">
+          <!-- <label>z = </label> -->
+          <!-- <input type="text" id="function" value="sin(x^2 + y^2)" >   -->
+          <input type="text" id="function" value="sin(x)" >  
+          <!-- <input type="text" id="function" value="exp(x)" >   -->
+          <!-- <input type="text" id="function" value="cos(x)" >   -->
+        </div>
+  
+        <button class="btn" onclick="SceneRenderer.render()">Plot</button>
+  
+        <div class="scaling-input">
+          
+          <label id="x-scale">X-scale</label><br>
+          <input type="range" value= "0.3" min="0" max="1" oninput="this.nextElementSibling.value = this.value" class="slider" step="0.1" id="rangeX" onclick=""><output>0.3</output>
+          <br><br>
+
+          <label id="y-scale">Y-scale</label><br>
+          <input type="range" value= "0.3" min="0" max="1" oninput="this.nextElementSibling.value = this.value" class="slider" step="0.1" id="rangeY" onclick="" ><output>0.3</output>
+          <br><br>
+
+          <label id="z-scale">Z-scale</label><br>
+          <input type="range" value= "0.5" min="0" max="1" oninput="this.nextElementSibling.value = this.value" class="slider" step="0.1"><output>0.5</output>
+          <br><br>
+
+          <label class="resolution">Resolution</label><br>
+          <input type="range" value= "0.5" min="0" max="1" oninput="this.nextElementSibling.value = this.value" class="slider" step="0.1" id="resolution_scale"><output>0.5</output>
+          <br><br>
+
+          <label class="animate">Animate</label><br>
+          <input id="animate-btn" type="checkbox">
+          
+        </div>
+     </div>
+
+     
+    </div>
+
+    <br />
+    <script type="text/javascript" src="./init.js"  > </script>
+    <script type="text/javascript" src="./models/coordinateAxes.js"  > </script>
+    <script type="text/javascript" src="./samplesGenerator.js" > </script>
+    <script type="text/javascript" src="./models/graphObject.js"  > </script>
+    <script type="text/javascript" src="./shaders/vertex.js"  > </script>
+    <script type="text/javascript" src="./shaders/fragment.js" > </script>
+    <script type="text/javascript" src="./shaderHandler.js" > </script>
+    <script type="text/javascript" src="./vobModel.js" > </script>
+    <!-- <script type="text/javascript" src="./errorHandler.js" > </script> -->
+    <script type="text/javascript" src="./eventHandler.js" > </script>
+    <script type="text/javascript" src="./camera.js" > </script>
+    <script type="text/javascript" src="./renderer.js" > </script>
+    <script type="text/javascript" src="./App.js" defer > </script>
+  </body>
+
+</html>
